@@ -73,3 +73,10 @@ docker run -p 6379:6379 --name redis -v /mydata/redis/data:/data \
 -d redis redis-server /etc/redis/redis.conf
 ```
 
+## auto restart container when docker start
+
+```shell
+docker update mysql --restart=always
+docker update redis --restart=always
+```
+
